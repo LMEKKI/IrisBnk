@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  margin: 30px;
+}
+
+.logo {
+  flex-basis: 15%;
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 500;
+}
+.logo:hover {
+  color: rgba(10, 10, 10, 0.527);
+}
+
+.nav-bar {
+  flex-basis: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+}
+.nav-bar a:hover {
+  text-decoration: overline;
+  color: rgba(10, 10, 10, 0.527);
+}
+.contact {
+  flex-basis: 15%;
+  text-align: center;
+}
+
+.contact button {
+  font-size: 1.6em;
+  border: solid 1px #bfc2ff;
+  border-radius: 50px;
+  padding: 20px 40px;
+  background-color: #bfc2ff;
+}
+
+.contact button:hover {
+  background-color: #171718;
+  color: white;
+}
