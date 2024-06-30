@@ -3,31 +3,36 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vanilla Tailwind CSS Boilerplate</title>
+		<title>IrisBank</title>
 		<script type="module" src="main.js" defer></script>
 	</head>
-	<body class="p-2 h-screen">
-		<div class="navBar flex justify-around items-center shadow-sm p-2">
-			<div class="logo">
-				<p>IrisBank</p>
-			</div>
-			<div class="navLink flex gap-5">
+	<body class="p-2">
+		<nav
+			class="navbar flex justify-between container mx-auto lg:grid grid-cols-12 p-4 shadow bg-gray-100"
+		>
+			<div class="logo col-span-2">IRISbank</div>
+			<div
+				class="hidden nav_section md:col-span-6 lg:flex justify-evenly gap-2"
+			>
 				<a href="#">Particulier</a>
 				<a href="#">Professionel</a>
 				<a href="#">Contact</a>
 			</div>
-			<div class="navBtn flex gap-8">
-				<button class="btn-light bg-gray-50 shadow-md p-1 rounded-lg">
-					<a class="text-gray-950 text-xs font-a" href="#"
-						>Se connecter</a
-					>
-				</button>
-				<button
-					class="btn-light bg-gray-950 p-1 text-xs rounded-md text-gray-50"
-				>
-					<a href="#">Devenir client</a>
+
+			<div class="hidden sign_section col-span-4 flex gap-4">
+				<a href="">Devenir Client</a>
+				<a href="">Connexion</a>
+			</div>
+
+			<div>
+				<button>
+					<img
+						src="https://w7.pngwing.com/pngs/513/277/png-transparent-computer-icons-menu-bar-icon-design-hamburger-button-others-miscellaneous-angle-text-thumbnail.png"
+						alt=""
+						class="w-9"
+					/>
 				</button>
 			</div>
-		</div>
+		</nav>
 	</body>
 </html>
