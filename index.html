@@ -5,34 +5,58 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>IrisBank</title>
 		<script type="module" src="main.js" defer></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
 	</head>
-	<body class="p-2">
-		<nav
-			class="navbar flex justify-between container mx-auto lg:grid grid-cols-12 p-4 shadow bg-gray-100"
-		>
-			<div class="logo col-span-2">IRISbank</div>
-			<div
-				class="hidden nav_section md:col-span-6 lg:flex justify-evenly gap-2"
-			>
-				<a href="#">Particulier</a>
-				<a href="#">Professionel</a>
-				<a href="#">Contact</a>
-			</div>
+	<body>
+		<header class="p-4 font-normal font-mono">
+			<nav class="p-4">
+				<div class="nav_logo flex justify-between px-4">
+					<a class="text-xl" href="#">
+						<span><i class="ri-bank-line"></i></span>
+						IrisBank
+					</a>
 
-			<div class="hidden sign_section col-span-4 flex gap-4">
-				<a href="">Devenir Client</a>
-				<a href="">Connexion</a>
-			</div>
+					<!--  dropdownMenu-->
+					<div class="dropdown">
+						<i class="ri-menu-unfold-line"></i>
+						<i class="ri-menu-fold-line hidden"></i>
+					</div>
+				</div>
 
-			<div>
-				<button>
-					<img
-						src="https://w7.pngwing.com/pngs/513/277/png-transparent-computer-icons-menu-bar-icon-design-hamburger-button-others-miscellaneous-angle-text-thumbnail.png"
-						alt=""
-						class="w-9"
-					/>
-				</button>
-			</div>
-		</nav>
+				<div
+					class="nav_link flex justify-center items-center flex-col p-4"
+				>
+					<div class="midLink">
+						<ul>
+							<li>
+								<a href="#">Compre bancaire</a>
+							</li>
+							<li>
+								<a href="#">Crédit</a>
+							</li>
+							<li>
+								<a href="#">Epargne</a>
+							</li>
+						</ul>
+					</div>
+					<div
+						class="nav_sign flex justify-center items-center -ml-2"
+					>
+						<ul>
+							<li>
+								<a href="#">Nous contacter</a>
+							</li>
+
+							<li>
+								<a href="#"> Espace client</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 	</body>
 </html>
