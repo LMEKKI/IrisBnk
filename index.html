@@ -9,6 +9,12 @@
 			href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
 			rel="stylesheet"
 		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@event-calendar/build@3.1.0/event-calendar.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/@event-calendar/build@3.1.0/event-calendar.min.js"></script>
 	</head>
 	<body>
 		<header class="p-4 font-normal font-mono">
@@ -27,30 +33,31 @@
 				</div>
 
 				<div
-					class="nav_link flex justify-center items-center flex-col p-4"
+					class="nav_link flex justify-center flex-col items-center gap-2 p-4 shadow"
 				>
 					<div class="midLink">
 						<ul>
-							<li>
+							<li class="pt-2">
 								<a href="#">Compre bancaire</a>
 							</li>
-							<li>
+							<li class="pt-2">
 								<a href="#">Crédit</a>
 							</li>
-							<li>
+							<li class="pt-2">
 								<a href="#">Epargne</a>
 							</li>
 						</ul>
 					</div>
 					<div
-						class="nav_sign flex justify-center items-center -ml-2"
+						class="nav_sign flex justify-center items-center gap-2 -ml-2"
 					>
 						<ul>
-							<li>
+							<li class="pt-2">
 								<a href="#">Nous contacter</a>
+								<Mybbuton></Mybbuton>
 							</li>
 
-							<li>
+							<li class="pt-2 text-gray-700 font-bold">
 								<a href="#"> Espace client</a>
 							</li>
 						</ul>
@@ -58,5 +65,7 @@
 				</div>
 			</nav>
 		</header>
+
+		<div id="ec"></div>
 	</body>
 </html>
