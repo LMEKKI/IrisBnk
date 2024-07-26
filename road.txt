@@ -1,0 +1,46 @@
+afficher date du jour  [x]
+changer date du jour[x]
+afficher calendrier []
+mettre a jour calendrier []
+cree un evenement[]
+ajouter au calendrier un evenement[]
+modifier evenement[]
+supprimer evenement[]
+cree un employer []
+afficher un employer []
+supprimer un employe []
+
+
+
+
+Informations Générales :
+dateCourante : la date actuelle
+moisActuel : le mois en cours
+anneeActuelle : l'année en cours
+Informations sur les Événements :
+listeEvenements : une liste contenant tous les événements
+evenement : un événement spécifique
+titreEvenement : le titre de l'événement
+descriptionEvenement : la description de l'événement
+dateDebut : la date de début de l'événement
+dateFin : la date de fin de l'événement
+heureDebut : l'heure de début de l'événement
+heureFin : l'heure de fin de l'événement
+lieuEvenement : le lieu de l'événement
+Informations sur les Jours et Semaines :
+jour : un jour spécifique
+jourSemaine : le jour de la semaine (lundi, mardi, etc.)
+numeroJour : le numéro du jour dans le mois
+semaine : une semaine spécifique
+numeroSemaine : le numéro de la semaine dans l'année
+Informations sur les Mois et Années :
+mois : un mois spécifique
+annee : une année spécifique
+joursDansMois : le nombre de jours dans un mois
+Autres Variables :
+rappels : les rappels pour les événements
+prioriteEvenement : la priorité de l'événement (haute, moyenne, basse)
+participantsEvenement : les participants à l'événement
+
+
+m
