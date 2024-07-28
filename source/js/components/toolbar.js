@@ -3,14 +3,12 @@ import {
 	createDomEl,
 	TodayDate,
 	addEvent,
-	uiDates,
+	nextDate,
+	prevDate,
+	resetDate,
 } from "../services/taskRunner";
 let currentDate = dayjs().format("DD/MM/YY");
 let shadow;
-const leftArrowImg = document.createElement("img");
-leftArrowImg.src = "../../public/images/arrow-left-to-arc.svg";
-const rightArrowImg = document.createElement("img");
-rightArrowImg.src = "../../public/images/arrow-left-from-arc.svg";
 
 const customCss = () => {
 	let link = document.createElement("link");
@@ -26,20 +24,14 @@ const toolbarUi = () => {
 	const Views = document.createElement("div");
 	const prevBtn = document.createElement("button");
 	const nextBtn = document.createElement("button");
-	const TodayBtn = document.createElement("button");
+	const todayBtn = document.createElement("button");
 	prevBtn.textContent = "Prev";
 	nextBtn.textContent = "Next";
-	TodayBtn.textContent = "Today";
-	prevBtn.addEventListener("click", () => {
-		nextPrevUi.prevDate();
-	});
-	nextBtn.addEventListener("click", () => {
-		nextPrevUi.nextDate();
-	});
+	todayBtn.textContent = "Today";
 
 	NavBtn.appendChild(prevBtn);
 	NavBtn.appendChild(nextBtn);
-	NavBtn.appendChild(TodayBtn);
+	NavBtn.appendChild(todayBtn);
 	dateUi.textContent = currentDate;
 	container.classList.add(
 		"flex",
@@ -59,7 +51,19 @@ const toolbarUi = () => {
 	container.appendChild(dateUi);
 	container.appendChild(Views);
 
-	const nextPrevUi = new uiDates(currentDate);
+	nextBtn.addEventListener("click", (e) => {
+		e.preventDefault();
+		nextDate(dateUi);
+	});
+	prevBtn.addEventListener("click", (e) => {
+		e.preventDefault();
+		prevDate(dateUi);
+	});
+
+	todayBtn.addEventListener("click", (e) => {
+		e.preventDefault();
+		resetDate(dateUi);
+	});
 
 	shadow.appendChild(container);
 };
